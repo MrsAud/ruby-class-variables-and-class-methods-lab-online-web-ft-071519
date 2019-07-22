@@ -10,5 +10,12 @@ class Song
     @genre = genre
   end
   
+  def count
+    @@count
+  end
+  
+  def genres
+    Song.genre.uniq!
+  end
   
 end
